@@ -15,7 +15,7 @@ class Gui
 
   fileSelected: (file) =>
 
-  updateProgress: (percentage) =>
-    bar = document.getElementById('progressbar')
+  updateProgress: (loaded) =>
+    $('#progressbar').css(width: "#{loaded * 100}%")
 
 module.exports = Gui
