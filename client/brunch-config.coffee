@@ -11,3 +11,6 @@ exports.config =
 
     templates:
       joinTo: 'javascripts/app.js'
+
+  paths:
+    compass: 'compass.rb'
