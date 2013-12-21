@@ -1,0 +1,14 @@
+/* line 3, /Users/tomek/Projekty/hackaton/dropRTCyo/client/app/assets/stylesheets/app.scss */
+#progressbar {
+  height: 10px;
+  width: 10px;
+  border: 1px solid black;
+  -webkit-transition-property: width;
+  -moz-transition-property: width;
+  -o-transition-property: width;
+  transition-property: width;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}

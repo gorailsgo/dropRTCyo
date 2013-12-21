@@ -20,6 +20,9 @@
     "handlebars-brunch": ">= 1.0 < 1.8",
     "uglify-js-brunch": ">= 1.0 < 1.8",
     "clean-css-brunch": ">= 1.0 < 1.8",
+    "auto-reload-brunch": ">= 1.0 < 1.8",
+    "sass-brunch": "~1.7.2",
+    "compass-brunch": "0.0.2",
     "peer": ">= 0.2.1"
   },
   "devDependencies": {}
