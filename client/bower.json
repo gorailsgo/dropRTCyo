@@ -4,6 +4,7 @@
   "main": "public/javascripts/app.js",
   "dependencies": {
     "console-polyfill": "~0.1.0",
-    "jquery": "~2.0.2"
+    "jquery": "~2.0.2",
+    "peerjs": "~0.3.6"
   }
 }
