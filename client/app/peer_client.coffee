@@ -1,10 +1,11 @@
-peer = new Peer({host: '127.0.0.1', port: 9000, key: 'peerjs'})
-
 class PeerClient
-  constructor: (id)->
+  constructor: ->
     @peer = new Peer({host: '127.0.0.1', port: 9000, key: 'peerjs'})
+
+  start: (id) =>
     @connection = @peer.connect(id)
-    @
-  onDataRecived: (func) ->
-    @connection.on 'data', func
+    @connection.on 'data', (data) => @dataReceived(data)
+
+  dataReceived: (data) =>
+
 module.exports = PeerClient
