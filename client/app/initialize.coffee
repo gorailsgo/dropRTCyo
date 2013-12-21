@@ -3,7 +3,7 @@ ClientApplication = require('client_application')
 
 $ ->
   if window.File and window.FileReader
-    if window.location.hash
+    if window.location.search
       new ClientApplication().start()
     else
       new ServerApplication().start()
