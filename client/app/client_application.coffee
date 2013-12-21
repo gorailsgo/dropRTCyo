@@ -9,7 +9,7 @@ class ClientApplication
     @glue = new Glue(@gui, @client)
 
   start: =>
-    id = window.location.hash.replace("#", "")
+    id = window.location.search.replace("?", "")
     @gui.start()
     @client.start(id)
 
