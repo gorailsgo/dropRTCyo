@@ -10,6 +10,9 @@ class Gui
   displayContent: (content) =>
     console.log(content)
 
+  setHash: (hash) =>
+    window.location.hash = hash
+
   fileSelected: (file) =>
 
 module.exports = Gui
