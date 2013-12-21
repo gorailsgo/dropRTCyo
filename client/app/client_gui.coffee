@@ -5,6 +5,6 @@ class ClientGui
     $("#file").hide()
 
   showData: (data) =>
-    $("body").append("<a href='#{data}'>The file</a>")
+    $("ul").append("<li><a href='#{data}'>The file</a></li>")
 
 module.exports = ClientGui

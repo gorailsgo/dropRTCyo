@@ -41,3 +41,13 @@ body {
   font-size: 20px;
   margin-left: 1px;
 }
+
+/* line 38, /Users/michalkozminski/Coding/test/hacaton/dropRTCyo/client/app/assets/stylesheets/app.scss */
+.file-list h1 {
+  font-family: sans-serif;
+}
+/* line 41, /Users/michalkozminski/Coding/test/hacaton/dropRTCyo/client/app/assets/stylesheets/app.scss */
+.file-list li {
+  list-style-type: upper-roman;
+  font-family: sans-serif;
+}

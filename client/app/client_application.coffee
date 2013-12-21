@@ -4,6 +4,7 @@ Gui = require('client_gui')
 
 class ClientApplication
   constructor: ->
+    $("#client").show()
     @client = new PeerClient()
     @gui = new Gui()
     @glue = new Glue(@gui, @client)

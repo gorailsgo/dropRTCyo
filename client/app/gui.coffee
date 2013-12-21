@@ -33,7 +33,7 @@ class Gui
 
   showHash: (hash) =>
     $("#file").hide()
-    $("body").append("The url: #{window.location}?#{hash}")
+    $("body").append("The url: <input value='#{window.location}?#{hash}' size='40' />")
 
   fileSelected: (file) =>
 
