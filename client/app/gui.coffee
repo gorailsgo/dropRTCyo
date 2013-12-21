@@ -10,8 +10,9 @@ class Gui
   displayContent: (content) =>
     console.log(content)
 
-  setHash: (hash) =>
-    window.location.hash = hash
+  showHash: (hash) =>
+    $("#file").hide()
+    $("body").append("The url: #{window.location}##{hash}")
 
   fileSelected: (file) =>
 

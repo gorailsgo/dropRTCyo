@@ -1,17 +1,15 @@
 class PeerServer
   start: =>
     @peer = new Peer({host: '127.0.0.1', port: 9000, key: 'peerjs'})
-    @peer.on('open', (id) => @started(id))
+    @peer.on('open', (id) => @id = id)
 
   sendDataOnClientConnected: (data) =>
-    console.log("WAITING FOR CONNECTION")
-    console.log(data)
+    @sendingStarted(@id)
     @peer.on 'connection', (connection) =>
-      console.log("CONNECTED")
       connection.on 'open', =>
         connection.send(data)
 
-  started: (id) =>
+  sendingStarted: =>
 
 
 module.exports = PeerServer

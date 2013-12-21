@@ -3,6 +3,6 @@ class Glue
     @gui.fileSelected = (file) => @fileReaderAdapter.readFile(file)
     @fileReaderAdapter.fileRead = (content) => @server.sendDataOnClientConnected(content)
     @fileReaderAdapter.updateProgress = (loaded) => @gui.updateProgress(loaded)
-    @server.started = (id) => @gui.setHash(id)
+    @server.sendingStarted = (id) => @gui.showHash(id)
 
 module.exports = Glue
