@@ -1,7 +1,11 @@
 ServerApplication = require('server_application')
+ClientApplication = require('client_application')
 
 $ ->
   if window.File and window.FileReader
-    new ServerApplication().start()
+    if window.location.hash
+      new ClientApplication().start()
+    else
+      new ServerApplication().start()
   else
     alert("Unfortunately I won't make it!")
