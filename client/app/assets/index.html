@@ -7,9 +7,32 @@
   <title>Brunch example application</title>
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/stylesheets/app.css">
-  <script src="/javascripts/vendor.js"></script>
+  <script src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
   <script src="/javascripts/app.js"></script>
+  <script src="/javascripts/vendor.js"></script>
   <script>require('initialize');</script>
+  <script>
+  function makeid()
+{
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for( var i=0; i < 5; i++ )
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return text;
+}
+
+  </script>
+  <script>
+      // No API key required when not using cloud server
+      var peer = new Peer('sample', {host: '127.0.0.1', port: 9000, key: 'peerjs'});
+      peer.on('connection', function(conn) { 
+        alert('connected');
+      });
+      var connect = peer.connect('sample');
+  </script>
+
 </head>
 <body>
   <input type="file" id="file" name="file">
