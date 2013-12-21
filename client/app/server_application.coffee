@@ -5,6 +5,7 @@ PeerServer = require('peer_server')
 
 class ServerApplication
   constructor: ->
+    $("#server").show()
     @gui = new Gui()
     @fileReaderAdapter = new FileReaderAdapter()
     @server = new PeerServer()
