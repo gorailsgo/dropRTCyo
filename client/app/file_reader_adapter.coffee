@@ -1,10 +1,9 @@
 class FileReaderAdapter
-  constructor: ->
+  readFile: (file) =>
     @reader = new FileReader()
+
     @reader.onload = (event) =>
       @handleFileRead(event)
-
-  readFile: (file) =>
     @reader.readAsDataURL(file)
 
   handleFileRead: (event) =>

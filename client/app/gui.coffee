@@ -4,23 +4,23 @@ class Gui
     @fileInput.addEventListener('change', @handleFileSelected, false)
 
     $('#drop').on 'dragenter', (e) ->
-      e.stopPropagation();
-      e.preventDefault();
-      $(this).css('border-color', '#707070');
-      $(this).css('border-width', '4');
+      e.stopPropagation()
+      e.preventDefault()
+      $(this).css('border-color', '#707070')
+      $(this).css('border-width', '4')
       $(this).find('.title').css('margin-top', '134px')
       $(this).find('.title').css('margin-left', '0px')
 
     $("#drop").on 'dragleave', (e) ->
-      e.stopPropagation();
-      e.preventDefault();
-      $(this).css('border-color', 'grey');
+      e.stopPropagation()
+      e.preventDefault()
+      $(this).css('border-color', 'grey')
       $(this).css('border-width', '3');
       $(this).find('.title').css('margin-top', '135px')
       $(this).find('.title').css('margin-left', '2px')
     $("#drop").on 'dragover', (e)->
-      e.preventDefault();
-      e.stopPropagation();
+      e.preventDefault()
+      e.stopPropagation()
     $("#drop").on 'drop', @onDrop
 
 
@@ -40,10 +40,10 @@ class Gui
   updateProgress: (number, total) =>
     $('#progressbar').css(width: "#{(number/total) * 100}%")
 
-#private
-  onDrop: (event)->
-    console.log "qwer"
+  onDrop: (event) =>
     event.preventDefault()
-    console.log(event.originalEvent.dataTransfer.files)
+    for file in event.originalEvent.dataTransfer.files
+      do (file) =>
+        @fileSelected(file)
 
 module.exports = Gui
