@@ -1,4 +1,4 @@
-Application = require('./gui')
+Application = require('application')
 
 $ ->
   if window.File and window.FileReader
