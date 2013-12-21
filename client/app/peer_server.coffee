@@ -8,8 +8,6 @@ class PeerServer
     @peer.on 'connection', (connection) =>
       connection.on 'open', =>
         connection.send(data)
-        @updateProgress(number)
-
 
   sendingStarted: =>
 

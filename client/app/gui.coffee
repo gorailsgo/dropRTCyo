@@ -41,9 +41,13 @@ class Gui
     $('#progressbar').css(width: "#{(number/total) * 100}%")
 
   onDrop: (event) =>
+    number = 0
+    total = event.originalEvent.dataTransfer.files.length
     event.preventDefault()
     for file in event.originalEvent.dataTransfer.files
       do (file) =>
+        number = number + 1
         @fileSelected(file)
+        @updateProgress(number, total)
 
 module.exports = Gui
