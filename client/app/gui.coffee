@@ -18,7 +18,10 @@ class Gui
       $(this).css('border-width', '3');      
       $(this).find('.title').css('margin-top', '135px')
       $(this).find('.title').css('margin-left', '2px')
-    $("#drop").on 'drop', onDrop
+    $("#drop").on 'dragover', (e)->
+      e.preventDefault();
+      e.stopPropagation();
+    $("#drop").on 'drop', @onDrop
 
 
   handleFileSelected: (event) =>
@@ -39,8 +42,8 @@ class Gui
 
 #private
   onDrop: (event)->
-    data = event.dataTransfer.getData('text/plain')
+    console.log "qwer"
     event.preventDefault()
-    console.log(event.dataTransfer.files)
+    console.log(event.originalEvent.dataTransfer.files)
 
 module.exports = Gui
