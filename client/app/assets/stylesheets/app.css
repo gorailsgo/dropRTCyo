@@ -1,60 +1,14 @@
-/*
-Syntax error: File to import not found or unreadable: modules/progess.
-              Load paths:
-                /Users/tomek/Projekty/hackaton/dropRTCyo/client/app/assets/stylesheets
-                /Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/blueprint/stylesheets
-                /Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets
-                Compass::SpriteImporter
-        on line 1 of /Users/tomek/Projekty/hackaton/dropRTCyo/client/app/assets/stylesheets/app.scss
-
-1: /Users/tomek/Projekty/hackaton/dropRTCyo/client/app/assets/stylesheets/app.scss
-
-Backtrace:
-/Users/tomek/Projekty/hackaton/dropRTCyo/client/app/assets/stylesheets/app.scss:1
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/import_node.rb:45:in `import'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/root_node.rb:20:in `render'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/engine.rb:315:in `_render'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/engine.rb:262:in `render'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/commands/update_project.rb:45:in `perform'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/bin/compass:44:in `call'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/bin/compass:23:in `load'
-/Users/tomek/.rvm/gems/ruby-2.0.0-p247/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: modules/progess.\A               Load paths:\A                 /Users/tomek/Projekty/hackaton/dropRTCyo/client/app/assets/stylesheets\A                 /Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Users/tomek/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 1 of /Users/tomek/Projekty/hackaton/dropRTCyo/client/app/assets/stylesheets/app.scss\A \A 1: /Users/tomek/Projekty/hackaton/dropRTCyo/client/app/assets/stylesheets/app.scss"; }
+/* line 3, /Users/tomek/Projekty/hackaton/dropRTCyo/client/app/assets/stylesheets/app.scss */
+#progressbar {
+  height: 10px;
+  width: 10px;
+  border: 1px solid black;
+  -webkit-transition-property: width;
+  -moz-transition-property: width;
+  -o-transition-property: width;
+  transition-property: width;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}

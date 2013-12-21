@@ -12,4 +12,7 @@ class Gui
 
   fileSelected: (file) =>
 
+  updateProgress: (percentage) =>
+    bar = document.getElementById('progressbar')
+
 module.exports = Gui
