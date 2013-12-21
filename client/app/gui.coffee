@@ -15,7 +15,7 @@ class Gui
       e.stopPropagation();
       e.preventDefault();
       $(this).css('border-color', 'grey');
-      $(this).css('border-width', '3');      
+      $(this).css('border-width', '3');
       $(this).find('.title').css('margin-top', '135px')
       $(this).find('.title').css('margin-left', '2px')
     $("#drop").on 'dragover', (e)->
@@ -37,8 +37,8 @@ class Gui
 
   fileSelected: (file) =>
 
-  updateProgress: (loaded) =>
-    $('#progressbar').css(width: "#{loaded * 100}%")
+  updateProgress: (number, total) =>
+    $('#progressbar').css(width: "#{(number/total) * 100}%")
 
 #private
   onDrop: (event)->

@@ -3,11 +3,6 @@ class FileReaderAdapter
     @reader = new FileReader()
     @reader.onload = (event) =>
       @handleFileRead(event)
-    @reader.onprogress = (event) =>
-      if event.lengthComputable
-        loaded = event.loaded / event.total
-        console.log loaded
-        @updateProgress(loaded)
 
   readFile: (file) =>
     @reader.readAsDataURL(file)
@@ -16,7 +11,5 @@ class FileReaderAdapter
     @fileRead(event.target.result)
 
   fileRead: (content) =>
-
-  updateProgress: (loaded) =>
 
 module.exports = FileReaderAdapter
