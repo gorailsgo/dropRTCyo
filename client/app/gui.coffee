@@ -18,6 +18,7 @@ class Gui
       $(this).css('border-width', '3');      
       $(this).find('.title').css('margin-top', '135px')
       $(this).find('.title').css('margin-left', '2px')
+    $("#drop").on 'drop', onDrop
 
 
   handleFileSelected: (event) =>
@@ -35,5 +36,11 @@ class Gui
 
   updateProgress: (loaded) =>
     $('#progressbar').css(width: "#{loaded * 100}%")
+
+#private
+  onDrop: (event)->
+    data = event.dataTransfer.getData('text/plain')
+    event.preventDefault()
+    console.log(event.dataTransfer.files)
 
 module.exports = Gui
